@@ -13,6 +13,8 @@ We consider multiple unmanned aerial vehicles (UAVs) at a common altitude servin
 
 ## Content of Code Package
 
+## Numerical Results
+
 ## Acknowledgement
 
 This work was supported in part by the **NSF Award CCF1814717**.
