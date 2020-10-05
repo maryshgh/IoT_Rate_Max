@@ -19,6 +19,7 @@ for cin = 1:n
     voronois(cin) = mat2cell(x(:,dum),dim,voronoiSizes(cin));
 end
 
+% Calculate the cost
 costtemp = 0;
 for cin = 1:n
     PLOS = 1./(1+c*exp(-b*(atan(h./sqrt(sum((repmat(u(:,cin), 1, voronoiSizes(cin)) - cell2mat(voronois(cin))).^2, 1)))-c))) ;
