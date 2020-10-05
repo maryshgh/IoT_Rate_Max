@@ -1,5 +1,5 @@
 function [cost_opt,deploy_opt] = PSO(r,x,h,nVar,P,delta)
-
+% Initialize the model parameters
 b = 0.43;
 b11 = (1-delta)*b;
 c = 4.88;
