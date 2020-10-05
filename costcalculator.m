@@ -9,6 +9,7 @@ for cin = 1:n
     voronois(cin) = mat2cell(x(dum),dim,voronoiSizes(cin));
 end
 
+% Calculate the corresponding cost
 costtemp = 0;
 for cin = 1:n
     costi = sum(sqrt((repmat(u(cin), 1, voronoiSizes(cin)) - cell2mat(voronois(cin))).^2))
